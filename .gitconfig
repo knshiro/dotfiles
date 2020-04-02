@@ -1,21 +1,21 @@
 [alias]
-	co = checkout
-	com = checkout master
-	cob = checkout -b
-	cp = cherry-pick
-	st = status
-	cl = clone
-	ci = commit
-	br = branch
-	unstage = reset HEAD --
-	amend = commit -a --amend --verbose
+  co = checkout
+  com = checkout master
+  cob = checkout -b
+  cp = cherry-pick
+  st = status
+  cl = clone
+  ci = commit
+  br = branch
+  unstage = reset HEAD --
+  amend = commit -a --amend --verbose
 
   fuckall = reset HEAD --hard
 
   # Diff related
-	dc = diff --cached
-	dl = "!git ll -1"
-	dlc = diff --cached HEAD^
+  dc = diff --cached
+  dl = "!git ll -1"
+  dlc = diff --cached HEAD^
 
   # Rebase related
   rbi = rebase -i
@@ -26,18 +26,18 @@
 
   # Branches related
   # list branches sorted by last modified
-	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+  b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
   # Delete all branches except master
-	clbr = "!git branch | grep -v master | xargs git branch -D"
+  clbr = "!git branch | grep -v master | xargs git branch -D"
 
   # Log related
-	last = --no-pager log -1 HEAD
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
-	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
-	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
-	le = log --oneline --decorate
+  last = --no-pager log -1 HEAD
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  le = log --oneline --decorate
 [core]
-	editor = vim
+  editor = vim
