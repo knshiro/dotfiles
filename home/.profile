@@ -15,7 +15,7 @@ fi
 
 if command -v tmux >/dev/null 2>&1
 then
-  alias mtmux="tmux -CC a -t ugo || tmux -CC new-session -s ugo"
+  alias mtmux="tmux -CC new -A -s main"
 fi
 
 alias firebase.gmail="cp ~/.config/configstore/firebase-tools-gmail.json ~/.config/configstore/firebase-tools.json"
