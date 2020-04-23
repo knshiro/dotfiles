@@ -100,4 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Profile
+source $HOME/.iterm2_shell_integration.zsh
 source $HOME/.profile
